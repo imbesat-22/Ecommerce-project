@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My E-commerce Site</title>
 <link rel="stylesheet" href="styles.css">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
 
     </head>
     <body>
@@ -16,28 +17,32 @@
             <img src="images/logo.png" alt="Cartify logo" class="main-navbar__logo-icon">
             Cartify
         </a>
-gi
-          <option>Electronics</option>
-          <option>Clothing</option>
-        </select>
-        <button class="navbar__search-btn">Search</button>
-      </div>
+        <div class="navbar__search">
+          <i class="bx bx-search navbar__search-icon"></i>
+        <input type="text" class="navbar__search-input" placeholder="Search for products">
+          <select class="navbar__search-cat">
+            <option>All Categories</option>
+            <option>Electronics</option>
+            <option>Clothing</option>
+          </select>
+          <button class="navbar__search-btn">Search</button>
+        </div>
  
       <div class="navbar__icons">
         <a href="#" class="navbar__icon-item">
-          <span class="icon">👤</span>
+          <i class="bx bx-user" style="font-size: 24px;" aria-label="Profile"></i>
           <span class="icon-label">Profile</span>
         </a>
         <a href="#" class="navbar__icon-item">
-          <span class="icon">💬</span>
+          <i class="bx bx-message" style="font-size: 24px;" aria-label="Message"></i>
           <span class="icon-label">Message</span>
         </a>
         <a href="#" class="navbar__icon-item">
-          <span class="icon">❤️</span>
+          <i class="bx bx-heart" style="font-size: 24px;" aria-label="Favorites"></i>
           <span class="icon-label">Orders</span>
         </a>
         <a href="#" class="navbar__icon-item">
-          <span class="icon">🛒</span>
+          <i class="bx bx-shopping-bag" style="font-size: 24px;" aria-label="Shopping Cart"></i>
           <span class="icon-label">My cart</span>
         </a>
       </div>
@@ -47,12 +52,10 @@ gi
         <!-- Top Bar -->
 <div class="top-bar">
     <div class="container top-bar__inner">
-        <button class="top-bar_menu">
-            <span class="hamburger"></span>
-            <span class="hamburger"></span>
-            <span class="hamburger"></span>
-            All Categories
-        </button>
+       <button class="top-bar_menu" aria-label="Menu">
+    <i class="bx bx-menu" style="font-size: 24px;"></i>
+    All Categories
+</button>
         <nav class="top-bar__links">
         <a href="#">Hot offers</a>
         <a href="#">Gift boxes</a>
@@ -66,7 +69,129 @@ gi
                 <option>English, USD</option>
                 <option>Urdu, PKR</option>
             </select>
-            <span>Ship to Pk</span>
+             <i class="bx bx-chevron-down"></i>
+             <select class="top-bar__select">
+              <option>Ship to US</option>
+              <option>Ship to Pk</option>
+             </select>
+            
         </div>
     </div>
 </div>
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+  <h2 class="newsletter_title">
+    Subscribe on our newsletter
+  </h2>
+  <p class="newsletter_subtitle">Get daily news on upcoming offers from many suppliers all over the world.</p>
+  <div class="newsletter__form">
+      <i class="bx bx-envelope newsletter__icon" aria-hidden="true"></i>
+      <input type="email" placeholder="Email" class="newsletter__input" />
+      <button class="newsletter__btn">Subscribe</button>
+    </div>
+
+</section>
+
+<!-- Footer -->
+ <footer class="footer">
+  < class="container footer__grid">
+
+    <!-- Footer Brand-column -->
+  <div class="footer__brand">
+  <a href="#" class="footer__logo">
+    <img src="images/logo.png" alt="Cartify logo" class="footer__logo-icon">
+    Cartify
+    </a>
+    <p class="footer__desc">Cartify is your one-stop online marketplace connecting millions of buyers with trusted suppliers worldwide. We offer the best deals on electronics, fashion, home goods, and more — delivered fast to your door.
+
+</p>
+    <div class="footer__socials">
+          <a href="#" class="footer__social-btn" aria-label="Facebook"><i class="bx bxl-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="footer__social-btn" aria-label="Twitter"><i class="bx bxl-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="footer__social-btn" aria-label="LinkedIn"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
+          <a href="#" class="footer__social-btn" aria-label="Instagram"><i class="bx bxl-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="footer__social-btn" aria-label="YouTube"><i class="bx bxl-youtube" aria-hidden="true"></i></a>
+        </div>
+</div>
+
+<!--About column-->
+<div class="footer__col">
+  <h3 class="footer__col-title">About</h3>
+  <ul class="footer_list">
+    <li><a href="#" class="footer__link">About us</a></li>
+    <li><a href="#" class="footer__link">Find store</a></li>
+    <li><a href="#" class="footer__link">Categories</a></li>
+    <li><a href="#" class="footer__link">Blogs</a></li>
+  </ul>
+  </div>
+
+  <!--Customer Care column  -->
+  <div class="footer__col">
+    <h3 class="footer__col-title">Partnerships</h3>
+    <ul class="footer_list">
+      <li><a href="#" class="footer__link">Become a supplier</a></li>
+      <li><a href="#" class="footer__link">Advertise with us</a></li>
+      <li><a href="#" class="footer__link">Affiliate Program</a></li>
+      <li><a href="#" class="footer__link">Wholesale Buyers</a></li>
+      <li><a href="#" class="footer__link">Find Store</a></li>
+    </ul>
+  </div>
+
+  <!--Contact column  -->
+  <div class="footer__col">
+    <h3 class="footer__col-title">Information</h3>
+    <ul class="footer_links">
+      <li><a class="footer__link" href="#">Help Center</a></li>
+      <li><a class="footer__link" href="#">Money Refund</a></li>
+      <li><a class="footer__link" href="#">Shipping & Delivery</a></li>
+      <li><a class="footer__link" href="#">Contact us</a></li>
+    </ul>
+  </div>
+
+  <!-- For Users -->
+  <div class="footer__col">
+    <h3 class="footer__col-title">For Users</h3>
+    <ul class="footer_links">
+      <li><a class="footer__link" href="#">Login</a></li>
+      <li><a class="footer__link" href="#">Register</a></li>
+      <li><a class="footer__link" href="#">Account Settings</a></li>
+      <li><a class="footer__link" href="#">My Orders</a></li>
+    </ul>
+  </div>
+
+  <!-- Get App -->
+   <div class="footer__col">
+        <h3 class="footer__col-title">Get app</h3>
+        <div class="footer__apps">
+          <a href="#" class="footer__app-btn">
+            <i class="bx bxl-apple app-btn__icon" aria-hidden="true"></i>
+             <span class="app-btn__text">
+              <span class="app-btn__small">Download on the</span>
+              <span class="app-btn__big">App Store</span>
+            </span>
+            </a>
+    <a href="#" class="footer__app-btn">
+            <i class="bx bxl-play-store app-btn__icon" aria-hidden="true"></i>
+            <span class="app-btn__text">
+              <span class="app-btn__small">GET IT ON</span>
+              <span class="app-btn__big">Google Play</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+</div>
+
+ </footer>
+
+ <div class="bottom-bar">
+    <div class="container bottom-bar__inner">
+      <span class="bottom-bar__copy">© 2026 Ecommerce.</span>
+      <span class="bottom-bar__lang">🇺🇸 English</span>
+    </div>
+  </div>
+
+  </body>
+</html>
